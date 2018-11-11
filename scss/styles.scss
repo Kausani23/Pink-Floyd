@@ -2,7 +2,9 @@
 
 $red: #FF3349;
 $white: #fff;
-
+$border: #454545;
+$base: #0a0a0a;
+$mutedletter: #9b9b9d;
 
 * {
   margin: 0;
@@ -11,9 +13,25 @@ $white: #fff;
 }
 
 
+body{
+  background-color: $base;
+}
+
+h5 {
+  font-size: 25px;
+}
+
+.lead {
+  font-size: 18px;
+  color: $mutedletter;
+}
+
+.navbar {
+  background-color: #000;;
+}
 .carousel-item {
  height: 100vh;
- max-height: 800px;
+ max-height: 690px;
  background: no-repeat center center scroll;
  -webkit-background-size: cover;
  background-size: cover;
@@ -43,10 +61,11 @@ $white: #fff;
 }
 
 .carousel-caption h3 {
-  font-size: 60px;
-  text-transform: uppercase;
+  font-size: 70px;
+
   letter-spacing: 2px;
   margin-bottom:10px;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 .carousel-caption p{
@@ -121,4 +140,87 @@ $white: #fff;
 #banner2 h1, #banner2 p {
   down: 0;
 
+}
+
+#discography {
+  padding-top: 100px;
+
+}
+
+#discography h1 {
+  text-align: center;
+  font-size: 60px;
+  color: $white;
+  font-family: 'Julius Sans One', sans-serif;
+    }
+
+    #discography p {
+      text-align: justify;
+
+        }
+
+.horizontal-line {
+  background-color: $red;
+	width: 50%;
+	height:2px;
+  margin:2px auto;
+}
+
+.row{
+  padding:20px;
+  background-color: $base;
+  color:$white;
+}
+
+.card {
+  background-color: $base;
+  border-radius: none;
+  border: 1px solid $border;
+  min-height: 1000px;
+
+}
+
+.card-body {
+
+  text-align: center;
+}
+
+.album {
+    padding:0 30px;
+    margin-top:50px;
+}
+
+.list-group-item {
+  background-color: #000;
+  border: 1px solid $border;
+}
+
+#audioPlayer {
+  margin: 20px auto;
+
+}
+
+.card{
+  ul{
+    li{
+      a{
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.song-name {
+  float: left;
+
+  padding-top: 15px;
+}
+
+
+audio {
+  float:right;
+   padding: 0 30px;
+    width: 300px;
+    height: 54px;
 }
